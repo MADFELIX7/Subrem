@@ -8,6 +8,11 @@ def printhelp():
     也可以直接输入视频和字幕后缀，这将在脚本所在的路径下搜索文件
     后缀数目不限，如中文字幕常以.cht.ass为后缀，可以直接输入
     路径中一般都有非常规字符，如空格等，所以如果手动输入路径的话请加上双引号
+    更多细节请见https://github.com/madfelix-007/Subrem/blob/master/README.md
+
+    Usage：subrem [path*] [video suffix] [subtitle suffix]
+    You needn't input path if you are working this script under the very dir of your video and sub files.
+    For details turn to https://github.com/madfelix-007/Subrem/blob/master/README.md .   
     ''')
     exit(0)
 
@@ -47,3 +52,5 @@ else:
             shutil.copyfile(os.path.join(path,sub_name[i]),os.path.join(path,newname))
             i+=1
             #os.rename()
+    print("Success!")
+    exit(0)
