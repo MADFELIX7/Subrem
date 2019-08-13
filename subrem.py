@@ -41,6 +41,8 @@ else:
     for file in os.listdir(path):
         if file.endswith(sub_suffix):
             sub_name.append(file)
+    vd_name.sort()
+    sub_name.sort()
     #print(vd_name)
     #print('\n')
     #print(sub_name)
